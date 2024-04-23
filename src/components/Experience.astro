@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Desarrollador WEB",
+    company: "Independiente",
+    description:
+      "Creacion sobre proyectos pequenos en diferentes plataformas.",
+    link: "https://www.github.com/evilmauri",
+  },
+  {
+    date: "Abril 2024",
+    title: "Principal PHP Engineer",
+    company: "Personal",
+    description:
+      "Responsable de la plataforma, crear y llamar operaciones en php, tambien a utilizar las instrucciones if-else y hacer uso dentro de una funcion como hacer en conjunto con los ciclos iterativos, Tambien la conexion entre PHP y Base de datos.",
+  },
+  {
+    date: "Febrero 2024",
+    title: "Proyecto_Backend",
+    company: "Independiente",
+    description:
+    "Manejo de sesiones en tiempo real y conexion a Base de datos sqlite3 mediante migraciones,tambien como middleware,seeders y rutas.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

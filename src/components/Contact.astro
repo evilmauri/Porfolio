@@ -1,0 +1,27 @@
+---
+//Formulario sencillo, utilizando un API externa en este caso
+//FORMSUBMIT que requiere la accion y el metodo, para luego rellenarlo con el correo que quieres utilizar.
+//Luego de ello tienes que activar el correo mediante la primera activacion de la pagina
+---
+<form action="https://formsubmit.co/85ee8a53c1da3732aacd3b6d109d53bb" method="POST" class="size-10">
+    <label>
+        Nombre:
+        <input type="text" name="nombre" required />
+    </label>
+    <br>
+    <label>
+        Correo electronico:
+        <input type="email" name="email" required />
+    </label>
+    <br>
+    <label>
+        Mensaje:
+        <input type="text" name="description" required />
+    </label>
+    <br>
+    <button type="submit" class="bg-black rounded size-15 mb-2 text-white">Enviar</button>
+
+    <input type="hidden" name="_next" value="http://localhost:4321">
+    <input type="hidden" name="_captcha" value="false">
+</form>
+
